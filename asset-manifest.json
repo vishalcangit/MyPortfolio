@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/MyPortfolio/static/css/main.a0eb0579.css",
+    "main.js": "/MyPortfolio/static/js/main.ad28283c.js",
+    "static/media/me2.png": "/MyPortfolio/static/media/me2.04ded443dfde8f135f86.png",
+    "static/media/me.png": "/MyPortfolio/static/media/me.40c36ef40257da41ef3e.png",
+    "static/media/react.png": "/MyPortfolio/static/media/react.3f281ff9d09b0a87bad3.png",
+    "static/media/java.png": "/MyPortfolio/static/media/java.7506ee0b6a3a7de68178.png",
+    "static/media/mongodb.png": "/MyPortfolio/static/media/mongodb.a8889d623357ad8ce30e.png",
+    "static/media/nodejs.png": "/MyPortfolio/static/media/nodejs.a4713ff2ca054bf23788.png",
+    "static/media/github.png": "/MyPortfolio/static/media/github.2d1f9c7160fc8933ea3e.png",
+    "static/media/css.png": "/MyPortfolio/static/media/css.5721a3928fe43de6baf8.png",
+    "static/media/git.png": "/MyPortfolio/static/media/git.a54d3fa44e02f2f61e69.png",
+    "index.html": "/MyPortfolio/index.html",
+    "main.a0eb0579.css.map": "/MyPortfolio/static/css/main.a0eb0579.css.map",
+    "main.ad28283c.js.map": "/MyPortfolio/static/js/main.ad28283c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a0eb0579.css",
+    "static/js/main.ad28283c.js"
+  ]
+}
