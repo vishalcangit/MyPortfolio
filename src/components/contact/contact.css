@@ -49,7 +49,7 @@
   color: gray;
   background-color: white;
 }
-/* .contact-box input:valid ~ span, */
+.contact-box input:active ~ span,
 .contact-box input:focus ~ span {
   color: black;
   padding: 0 5px;

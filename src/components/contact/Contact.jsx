@@ -1,3 +1,4 @@
+import emailjs from "emailjs-com";
 import React, { useRef } from "react";
 import address from "../../img/address.png";
 import email from "../../img/email.png";
@@ -7,7 +8,22 @@ import "./contact.css";
 const Contact = () => {
   const formRef = useRef();
   const sendEmailHandler = (e) => {
-    e.preventDefault();https://certificate.codingninjas.com/view/09ee7e5da7d552ae
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        "service_2e87tpm",
+        "template_0laxcsn",
+        formRef.current,
+        "0TQ-Qs1mB1BAZiRp5"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
   };
   return (
     <div className="contact-container">
@@ -16,19 +32,24 @@ const Contact = () => {
       <div className="contact-wrapper">
         <form ref={formRef} onSubmit={sendEmailHandler}>
           <div className="contact-box">
-            <input type="text"></input>
+            <input type="text" name="user_name"></input>
             <span>Enter Name</span>
           </div>
           <div className="contact-box">
-            <input type="text"></input>
+            <input type="text" name="user_email"></input>
             <span>Enter email</span>
           </div>
           <div className="contact-box">
-            <input type="text"></input>
+            <input type="text" name="user_phone"></input>
             <span>Enter ph-number</span>
           </div>
           <div>
-            <textarea placeholder="Message" cols="35" rows={5}></textarea>
+            <textarea
+              placeholder="Message"
+              name="user_message"
+              cols="35"
+              rows={5}
+            ></textarea>
           </div>
           <button className="send-btn">Send</button>
         </form>
