@@ -37,3 +37,23 @@
   height: 5rem;
   margin-bottom: 1rem;
 }
+
+@media screen and (max-width: 480px) {
+  .skills-container {
+    height: 100vh;
+  }
+  .skill-title {
+    font-size: 2rem;
+    margin: 2rem;
+    margin-bottom: -2%;
+  }
+  .skill-item {
+    width: 5rem;
+    height: 5rem;
+  }
+  .skill-item img {
+    width: 3rem;
+    height: 3rem;
+    margin-bottom: 1rem;
+  }
+}

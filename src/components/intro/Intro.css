@@ -96,3 +96,25 @@
   font-size: 1rem;
   color: grey;
 }
+
+@media screen and (max-width: 480px) {
+  .i {
+    flex-direction: column;
+  }
+  .i-left-wrapper {
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  .i-description {
+    display: none;
+  }
+  .i-bg {
+    clip-path: circle(35% at 50% 50%);
+  }
+  .i-right {
+    margin-top: -10%;
+  }
+}

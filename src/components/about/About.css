@@ -51,3 +51,27 @@
   font-size: 1.5rem;
   word-spacing: 1rem;
 }
+
+@media screen and (max-width: 480px) {
+  .about-container {
+    height: fit-content;
+    flex-direction: column;
+    text-align: center;
+  }
+  .about-me-img {
+    display: none;
+  }
+  .about-contact {
+    margin-top: -25%;
+    margin-bottom: 20%;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  .about-info {
+    font-size: 1.1rem;
+    font-weight: bolder;
+    word-spacing: normal;
+    text-justify: distribute;
+  }
+}
