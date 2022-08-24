@@ -90,7 +90,7 @@ textarea {
   .contact-container {
     width: 90vw;
     margin-left: 5%;
-    height: fit-content;
+    height: 100vh;
     margin-top: 30%;
   }
   .contact-wrapper {
