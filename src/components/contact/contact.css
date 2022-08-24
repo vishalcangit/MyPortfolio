@@ -103,4 +103,8 @@ textarea {
   .contact-bg {
     display: none;
   }
+  textarea {
+    height: 5rem;
+    width: 70vw;
+  }
 }
