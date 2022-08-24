@@ -88,6 +88,8 @@ textarea {
 
 @media screen and (max-width: 480px) {
   .contact-container {
+    width: 90vw;
+    margin-left: 5%;
     height: fit-content;
     margin-top: 30%;
   }
