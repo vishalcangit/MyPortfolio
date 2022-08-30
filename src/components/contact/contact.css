@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.contact-container {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-wrapper {
+  width: 50vw;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  padding: 2rem;
+  box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 0px 6px,
+    rgb(255, 217, 19) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px,
+    rgb(255, 85, 85) 0px 0px 0px 15px;
+}
+.title {
+  margin-bottom: 2rem;
+}
+.contact-box {
+  position: relative;
+}
+.contact-box input {
+  margin: 1rem;
+  padding: 1rem;
+  font-size: 1.2rem;
+  width: 20rem;
+  height: 3rem;
+  outline: none;
+}
+.contact-box span {
+  position: absolute;
+  top: 1.6rem;
+  left: 2rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  pointer-events: none;
+  transition: 0.5s;
+  color: gray;
+  background-color: white;
+}
+.contact-box input:focus ~ span {
+  color: black;
+  padding: 0 5px;
+  transform: translateX(0px) translateY(-24px);
+}
+.send-btn {
+  width: 6rem;
+  height: 3rem;
+  margin: 1rem;
+  margin-bottom: 0;
+  font-size: 1.5rem;
+  font-weight: 500;
+  background-color: green;
+  color: aliceblue;
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
+    rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+.send-btn:hover {
+  color: black;
+  background-color: greenyellow;
+}
+.contact-bg {
+  width: 20px;
+  height: 100%;
+  background-color: #ffca28;
+  position: absolute;
+  left: 0;
+}
+textarea {
+  margin-left: 4%;
+  font-size: 1.2rem;
+  padding: 10px;
+  outline: none;
+}
+
+@media screen and (max-width: 480px) {
+  .contact-container {
+    width: 90vw;
+    margin-left: 5%;
+    height: 100vh;
+    margin-top: 30%;
+  }
+  .contact-wrapper {
+    box-shadow: none;
+    border: none;
+  }
+  .title {
+    margin-bottom: 0;
+  }
+  .contact-bg {
+    display: none;
+  }
+  textarea {
+    height: 5rem;
+    width: 70vw;
+  }
+}
